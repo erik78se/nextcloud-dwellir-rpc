@@ -24,6 +24,7 @@
 
      /**
       * @NoAdminRequired
+      * @NoCSRFRequired
       */
      public function index(): DataResponse {
          return new DataResponse($this->mapper->findAll($this->userId));

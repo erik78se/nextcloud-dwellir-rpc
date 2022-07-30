@@ -10,7 +10,7 @@ use OCP\AppFramework\Db\QBMapper;
 class RpcMapper extends QBMapper {
 
     public function __construct(IDBConnection $db) {
-        parent::__construct($db, 'drpc_rpc', Rpc::class);
+        parent::__construct($db, 'drpc', Rpc::class);
     }
 
     public function find(int $id, string $userId) {
