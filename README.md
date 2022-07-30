@@ -5,6 +5,7 @@
     juju add-model nextcloud-app-dev
     juju deploy nextcloud --channel edge
     juju deploy postgresql
+    juju relate postgresql:db nextcloud
     juju config nextcloud debug=true
     
     # Get the admin password for the site:
