@@ -7,7 +7,7 @@
   use OCP\Migration\SimpleMigrationStep;
   use OCP\Migration\IOutput;
 
-  class Version1400Date20220730150000 extends SimpleMigrationStep {
+  class Version1401Date2022073019240000 extends SimpleMigrationStep {
 
     /**
     * @param IOutput $output
@@ -19,8 +19,8 @@
         /** @var ISchemaWrapper $schema */
         $schema = $schemaClosure();
 
-        if (!$schema->hasTable('rpc')) {
-            $table = $schema->createTable('rpc');
+        if (!$schema->hasTable('drpc')) {
+            $table = $schema->createTable('drpc');
             $table->addColumn('id', 'integer', [
                 'autoincrement' => true,
                 'notnull' => true,

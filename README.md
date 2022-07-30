@@ -6,6 +6,10 @@
     juju deploy nextcloud --channel edge
     juju deploy postgresql
     juju config nextcloud debug=true
+    
+    # Get the admin password for the site:
+    juju run-action nextcloud/0 get-admin-password --wait
+
 
 ### Develop the app
 
@@ -25,7 +29,7 @@ Simply copy the app to the "apps" directory of nextcloud.
 Login to the postgresql instance and become the postgresql user.
 
     juju ssh postgresql
-    sudo su - postgresql
+    sudo su - postgres
 
 Check the database
     
