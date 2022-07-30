@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>drpc</id>
+    <name>Drpc</name>
+    <summary>Shows a RPC endpoint</summary>
+    <description><![CDATA[Shows an RPC endpoint]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="erik@dwellir.com" homepage="https://dwelir.com">Erik Lönroth</author>
+    <namespace>Drpc</namespace>
+    <category>integration</category>
+    <bugs>https://github.com/erik78se/nextcloud-dwellir-rpc</bugs>
+    <dependencies>
+        <nextcloud min-version="23" max-version="25"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Drpc</name>
+            <route>drpc.page.index</route>
+        </navigation>
+        <navigation>
+            <name>Dwellir RPC</name>
+            <route>drpc.rpc.index</route>
+        </navigation>
+    </navigations>
+</info>

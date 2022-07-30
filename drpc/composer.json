@@ -1,0 +1,15 @@
+{
+    "name": "Drpc",
+    "description": "Shows a RPC endpoint",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Erik Lönroth"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}
