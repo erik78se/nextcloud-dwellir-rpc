@@ -1,6 +1,6 @@
 <?php
 
-namespace OCA\Drpc\Tests\Integration\Controller;
+namespace OCA\DRpc\Tests\Integration\Controller;
 
 use OCP\AppFramework\App;
 use Test\TestCase;
@@ -25,5 +25,5 @@ class AppTest extends TestCase {
         $appManager = $this->container->query('OCP\App\IAppManager');
         $this->assertTrue($appManager->isInstalled('drpc'));
     }
-
+     
 }

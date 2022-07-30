@@ -1,12 +1,12 @@
 <?php
 
-namespace OCA\Drpc\Tests\Unit\Controller;
+namespace OCA\DRpc\Tests\Unit\Controller;
 
 use PHPUnit_Framework_TestCase;
 
 use OCP\AppFramework\Http\TemplateResponse;
 
-use OCA\Drpc\Controller\PageController;
+use OCA\DRpc\Controller\PageController;
 
 
 class PageControllerTest extends PHPUnit_Framework_TestCase {
