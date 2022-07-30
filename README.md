@@ -1,10 +1,11 @@
 # Dwellir RPC nextcloud app (practice)
 
 ### Setup development with juju
-juju add-model nextcloud-app-dev
-juju deploy nextcloud --channel edge
-juju deploy postgresql
-juju config nextcloud debug=true
+
+    juju add-model nextcloud-app-dev
+    juju deploy nextcloud --channel edge
+    juju deploy postgresql
+    juju config nextcloud debug=true
 
 ### Develop the app
 
@@ -27,7 +28,9 @@ Login to the postgresql instance and become the postgresql user.
     sudo su - postgresql
 
 Check the database
+    
     psql 
+    
     \c nextcloud
 
     \dt+
